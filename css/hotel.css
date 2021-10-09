@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root{
+    --bc-color: #fffefe;
+    --button-color: #DC7166;
+    --text-900: #000000;
+    --text-800: #272727;
+    --text-700: #505050;
+    --text-500: #D3D3D3;
+    --text-400: #f1f1f1;
+    --active-button: #f5cac3;
+    --blue-color: #2f3640;
+    --blue-hover: #414b57;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bc-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor1{
+    width: 100%;
+    height: auto;
+    background-color: var(--bc-color);
+    padding-bottom: 20%;
+}
+
+
+.nav{
+    position: fixed;
+    top: 87%;
+    width: 90%;
+   height: 60px;
+   background-color: var(--blue-color);
+   display: flex;
+   border-radius: 15px;
+   overflow-x: auto;
+   margin-left: 5%;
+   z-index: 111111;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__link i{
+    font-size: 18px;
+}
+
+.nav__link .active{
+    color: var(--blue-hover);
+}
+
+.foto-negocio{
+    width: 100%;
+    height: 270px;
+    padding: 0;
+}
+
+.foto-negocio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-negocio iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.gm-iv-address .gm-iv-address-description{
+    display: none!important;
+}
+
+.flecha{
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    padding: 20px;
+}
+
+.flecha i{
+    color: white;
+    font-size: 20px;
+}
+
+.texto{
+    width: 96%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+.texto h1{
+    font-size: 20px;
+    color: #2f3640;
+    font-weight: 700;
+}
+
+.texto p{
+    font-size: 14px;
+    color: #505050;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.funciones{
+    width: 53%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.boton{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.boton i{
+    font-size: 18px;
+    padding: 13px;
+    color: white;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    animation: entrada 500ms;
+    z-index: 10;
+  }
+
+  @keyframes entrada{
+      0%{
+          transform: scale(0);
+      }
+
+      100%{
+          transform: scale(1);
+      }
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .boton button{
+      border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    outline: none;
+    }
+
+    .modal-content iframe{
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .modal-content h2{
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    @media (max-width: 425px){
+
+        .modal-content{
+            width: 92%;
+            padding: 10px;
+        }
+
+        .modal-content h2{
+            font-size: 16px;
+        }
+        .modal-content iframe{
+            min-height: 250px;
+        }
+    }
+
+.owl-carousel{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.owl-nav, .owl-dots{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    height: 200px;
+    border: 0px;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: inset 0 0 3px #c4c4c4;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    object-fit: cover;
+    border-radius: 7px;
+    z-index: -1;
+}
+
+
+.covid-message{
+    width: 96%;
+    min-height: 130px;
+    margin-left: 2%;
+    border-radius: 7px;
+    background-image: url(../img/fondon.jpg);
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: inset 0 0 3px #c4c4c4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.covid-txt{
+    width: 60%;
+    height: auto;
+}
+
+.covid-txt h2{
+    font-size: 17px;
+    padding-top: 30px;
+    color: var(--blue-color);
+    font-weight: 600;
+    padding-left: 3%;
+}
+
+.covid-img {
+    width: 30%;
+    margin-top: 3%;
+}
+
+.covid-img img{
+    width: 100%;
+    animation: escala 3s infinite;
+}
+
+@keyframes escala {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.03);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.orientaciones{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: inset 0 0 3px #c4c4c4;
+}
+
+.recomendacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.icono{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #2f3640;
+}
+
+.icono i{
+    font-size: 18px;
+    margin-top: 22%;
+    margin-left: 28%;
+    color: white;
+}
+
+.texto1{
+    width: 85%;
+}
+
+.texto1 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #d8d8d84e;
+}
+
+footer p{
+    font-size: 14px;
+    color: #909090;
+    text-align: center;
+}
+
+.video-box{
+    margin-top: 40px;
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px #c4c4c4;
+    height: 200px;
+    padding: 10px;
+}
+
+.video-box iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
