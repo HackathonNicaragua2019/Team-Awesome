@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- principal -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hotel.css">
+    <title>Volcán Masaya</title>
+</head>
+<body>
+    
+    <section class="contenedor1">
+
+
+    <div class="foto-negocio">
+        <div class="flecha"> 
+            <a href="index.html">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1630971184135!6m8!1m7!1sCAoSLEFGMVFpcE1nNVZEOE1Nb29zRmNqcjBETmR5SERjQ2NENEV2RzEzMmsybDQ4!2m2!1d11.98523758674483!2d-86.16083420813084!3f295.10152067261174!4f0!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="texto">
+        <h1>Volcan Masaya</h1>
+        <p>Formado por bosques y páramo de lava solidificada originada por erupciones y emisiones de magna de los 
+            Volcanes Masaya y Nindirí. En la cima del volcán Masaya se observa el cráter Santiago
+             con 500 metros de ancho y 200 metros de profundidad, desprendiendo gases y fumarolas activas coquetean 
+             con las nubes de su entorno. 
+            <br><br>
+            A solamente 23 kms de la capital, el Parque Nacional Volcán Masaya es el primer y más grande parque
+             nacional del país, compuesto de una caldera volcánica de dos volcanes y cinco cráteres. Su cráter 
+             «Santiago» tiene una altitud de 635 metros sobre el nivel del mar, y emite continuamente grandes 
+             cantidades de dióxido de azufre. 
+
+
+
+            </p>
+    </div>
+
+    <div class="funciones" style="width: 20%;">
+
+
+        <div class="boton" style="background: hsl(4, 100%, 70%);">
+            <button id="myBtn"><i class="fas fa-map-marker-alt" style="padding-left: 14px; padding-top: 11px; font-size: 22px;"></i></button>
+                    
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Ubicación Volcan Masaya</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15611.375756165333!2d-86.16958808480344!3d11.985298404176454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7406c4641a9451%3A0xea7c8827d6d2c08!2sVolc%C3%A1n%20Masaya!5e0!3m2!1ses!2sni!4v1630976552880!5m2!1ses!2sni" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> </div>
+        </div>
+
+
+    </div>
+
+    <div id="carrusel1" class="owl-carousel owl-theme mb-3" >
+        <div class=" slide"  data-slide-index="0"><img src="img/volcan masaya0.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/volcan masaya 2.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/volcan masaya 3.jfif" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/volcan masaya 4.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/volcan masaya.jpg" alt=""><span></span></div>
+    </div>
+
+    <div class="video-box">
+        <iframe
+        src="https://www.youtube.com/embed/OgVqxBAi5sE?start=06" style="border: 0;">
+        </iframe>
+    </div>
+   
+
+    <footer>
+        <p>©Descubre Nicaragua, 2021. All Rights Reserved</p>
+    </footer>
+
+
+    <div class="nav">
+        <a href="index.html" class="nav__link">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <a href="hoteles.html" class="nav__link">
+            <i class="fas fa-hotel"></i>
+        </a>
+
+        <a href="restaurantes.html" class="nav__link">
+            <i class="fas fa-utensils"></i>
+        </a>
+
+        <a href="lugares.html" class="nav__link">
+            <i class="fas fa-umbrella-beach"></i>
+        </a>
+
+        <a href="actividades.html" class="nav__link">
+            <i class="far fa-compass"></i>
+        </a>
+
+    </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+	  <script src="js/owlCarousel2Rows.js"></script>
+     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+
+    	
+<script>
+
+    $(document).ready(function() {
+    
+    var item =  $('#carrusel1');
+    var _options1 = {
+                            margin: 10,
+                            nav: true,
+                            dots: true,
+                            slideBy: 'page',
+                            responsive: {
+                              0: {
+                                items: 2,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              },
+                              768: {
+                                items: 1,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              },
+                              1500: {
+                                items: 1,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              }
+                            }
+                          };
+    
+    var owl2Rows = new Owl2RowsConfig(item,_options1);
+    
+    
+    var owl2Rows2 = new Owl2RowsConfig(item2);
+    
+    
+        
+    
+    });
+    </script>
+    
+</body>
+</html>

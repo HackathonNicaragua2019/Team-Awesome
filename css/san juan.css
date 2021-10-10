@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root{
+    --bc-color: #fffefe;
+    --button-color: #DC7166;
+    --text-900: #000000;
+    --text-800: #272727;
+    --text-700: #505050;
+    --text-600: #989898;
+    --text-500: #D3D3D3;
+    --text-400: #f1f1f1;
+    --active-button: #f5cac3;
+    --blue-color: #2f3640;
+    --blue-hover: #414b57;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor1{
+    width: 100%;
+    height: auto;
+    background-color: var(--bc-color);
+    margin-bottom: 25%;
+}
+
+
+.nav{
+    position: fixed;
+    top: 87%;
+    width: 90%;
+   height: 60px;
+   background-color: var(--blue-color);
+   display: flex;
+   border-radius: 15px;
+   overflow-x: auto;
+   margin-left: 5%;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__link i{
+    font-size: 18px;
+}
+
+.nav__link .active{
+    color: var(--blue-hover);
+}
+
+.foto-negocio{
+    width: 100%;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.foto-negocio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flecha{
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    padding: 20px;
+}
+
+.flecha i{
+    color: white;
+    font-size: 20px;
+}
+
+.txt{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: -100px;
+    border-radius: 10px;
+}
+
+.txt h4{
+    width: 80%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 21px;
+    color: white;
+    font-weight: 600;
+}
+
+.txt p{
+    width: 80%;
+    height: auto;
+    margin-left: 3%;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.reseña{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tiempo{
+    width: 44%;
+    height: auto;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tiempo i{
+    font-size: 25px;
+    color: var(--button-color);
+}
+
+.tiempo h6{
+    width: 70%;
+    height: 22px;
+    font-size: 15px;
+    margin-left: 6%;
+    color: var(--text-500);
+}
+
+.tiempo p{
+    width: 60%;
+    color: var(--text-600);
+    font-size: 12px;
+    margin-left: 25%;
+    margin-top: -2%;
+}
+
+
+.Rate{
+    width: 44%;
+    height: auto;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Rate i{
+    font-size: 25px;
+    color: var(--button-color);
+}
+
+.Rate h6{
+    width: 70%;
+    height: 22px;
+    font-size: 15px;
+    margin-left: 6%;
+    color: var(--text-500);
+}
+
+.Rate p{
+    width: 40%;
+    color: var(--text-600);
+    font-size: 12px;
+    margin-left: 28%;
+    margin-top: -2%;
+}
+
+.txt_box{
+    width: 100%;
+    margin-top: 4%;
+    height: auto;
+}
+
+.txt_box h1{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    font-size: 17px;
+    color: var(--text-700);
+}
+
+.txt_box p{
+    width: 94%;
+    height: auto;
+    font-size: 14px;
+    color: var(--text-600);
+    margin-left: 3%;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+.box-img{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.caja-imagen{
+    width: 48%;
+    height: 130px;
+    margin-bottom: 3%;
+}
+
+.caja-imagen img{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    border-radius: 10px;
+}
+
+.boton{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.boton button{
+    width: 30%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1.5px solid var(--blue-color);
+    background-color: var(--blue-hover);
+    font-size: 14px;
+    color: var(--bc-color);
+    margin-left: 3%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.pie{
+    width: 100%;
+    height: 70px;
+    margin-top: 5%;
+    background-color: var(--bc-color);
+}
+
+.pie div{
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--text-500);
+    transform: translateY(180deg);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    padding-top: 7%;
+    text-align: center;
+    color: var(--text-700);
+}

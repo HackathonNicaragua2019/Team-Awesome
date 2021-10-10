@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- principal -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/hotel.css">
+    <title>San Juan del Sur</title>
+</head>
+<body>
+    
+    <section class="contenedor1">
+
+
+    <div class="foto-negocio">
+        <div class="flecha"> 
+            <a href="index.html">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1630465930689!6m8!1m7!1sCAoSLEFGMVFpcE1fOGZ2cUhsdmN3ck00Y0VTT29XR2x5aFNjbF91am5kZ3hVaXZJ!2m2!1d11.2588296!2d-85.874804!3f70.9196616502053!4f0!5f0.7820865974627469"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="texto">
+        <h1>San Juan del Sur</h1>
+        <p>Visita San Juan del Sur para encontrar varias docenas de playas hermosas, miradores panorámicos, un ambiente 
+            agradable en el centro de la ciudad y muchas opciones animadas de vida nocturna. El explorador español Andrés 
+            Niño descubrió San Juan del Sur en 1523, la cual se desarrolló como una pequeña comunidad pesquera. Desde que 
+            comenzaron a llegar los surfistas a la ciudad, se ha convertido en una escala muy popular entre los viajeros. 
+            <br><br>
+            Observa las casas de colores brillantes, las áreas verdes y a los habitantes de la ciudad, cuya amabilidad es
+             el complemento ideal para una experiencia típica nicaragüense.
+
+
+
+            </p>
+    </div>
+
+    <div class="funciones" style="width: 20%;">
+
+
+        <div class="boton" style="background: hsl(4, 100%, 70%);">
+            <button id="myBtn"><i class="fas fa-map-marker-alt" style="padding-left: 14px; padding-top: 11px; font-size: 22px;"></i></button>
+                    
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Ubicación San Juan del Sur</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31304.153026470143!2d-85.86826085!3d11.260002949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f75b443b4efe47b%3A0xf332ee2888003e1a!2sSan%20Juan%20del%20Sur!5e0!3m2!1ses!2sni!4v1630277320115!5m2!1ses!2sni" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> </div>
+        </div>
+
+
+    </div>
+
+    <div id="carrusel1" class="owl-carousel owl-theme mb-3" >
+        <div class=" slide"  data-slide-index="0"><img src="img/san juan 1.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/san juan 2.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/san juan 3.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/san juan 4.jpg" alt=""><span></span></div>
+        <div class=" slide"  data-slide-index="0"><img src="img/san juan.jpg" alt=""><span></span></div>
+    </div>
+
+    <div class="video-box">
+        <iframe
+        src="https://www.youtube.com/embed/zRuUlwO8XPo" style="border: 0;">
+        </iframe>
+    </div>
+   
+
+    <footer>
+        <p>©Descubre Nicaragua, 2021. All Rights Reserved</p>
+    </footer>
+
+
+    <div class="nav">
+        <a href="index.html" class="nav__link">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <a href="hoteles.html" class="nav__link">
+            <i class="fas fa-hotel"></i>
+        </a>
+
+        <a href="restaurantes.html" class="nav__link">
+            <i class="fas fa-utensils"></i>
+        </a>
+
+        <a href="lugares.html" class="nav__link">
+            <i class="fas fa-umbrella-beach"></i>
+        </a>
+
+        <a href="actividades.html" class="nav__link">
+            <i class="far fa-compass"></i>
+        </a>
+
+    </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+	  <script src="js/owlCarousel2Rows.js"></script>
+     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+
+    	
+<script>
+
+    $(document).ready(function() {
+    
+    var item =  $('#carrusel1');
+    var _options1 = {
+                            margin: 10,
+                            nav: true,
+                            dots: true,
+                            slideBy: 'page',
+                            responsive: {
+                              0: {
+                                items: 2,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              },
+                              768: {
+                                items: 1,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              },
+                              1500: {
+                                items: 1,
+                                rows: 1 //Opción no usada por Owl Carousel, esta se usa en el algoritmo personalizado
+                              }
+                            }
+                          };
+    
+    var owl2Rows = new Owl2RowsConfig(item,_options1);
+    
+    
+    var owl2Rows2 = new Owl2RowsConfig(item2);
+    
+    
+        
+    
+    });
+    </script>
+    
+</body>
+</html>
