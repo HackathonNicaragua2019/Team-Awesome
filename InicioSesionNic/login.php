@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: https://github.com/HackathonNicaragua2019/Team-Awesome');
+    header('Location: https://descubrenicaraguabeta.netlify.app/index.html');
   }
   require 'database.php';
 
@@ -17,7 +17,7 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: https://github.com/HackathonNicaragua2019/Team-Awesome");
+      header("Location: https://descubrenicaraguabeta.netlify.app/index.html");
     } else {
       $message = 'Lo siento esas credenciales no coinciden';
     }
